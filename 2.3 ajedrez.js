@@ -11,85 +11,8 @@ Escribe un programa que cree un string que represente una cuadrícula de 8 × 8,
 # # # #
 
 Cuando tengas un programa que genere este patrón, define una vinculación tamaño = 8 y cambia el programa para que funcione con cualquier tamaño, dando como salida una cuadrícula con el alto y ancho dados.
-
 */
 
-
-/*
-let lineaImpar = "# # # # ";
-let lineaPar = " # # # #";
-let tamaño = Number(prompt("Escoge el tamaño de tu tablero"));
-let columns = tamaño;
-
-
-    if (columns % 2 == 0){
-
-        console.log(lineaPar);
-    }
-    else if(columns % 2 != 0){
-        console.log(lineaImpar);
-    }
-*/
-/*
-let lineaImpar = "# # # # ";
-let lineaPar = " # # # #";
-let tamaño = Number(prompt("Escoge el tamaño de tu tablero"));
-
-for (let columns = tamaño; columns < 9; columns++) {
-        columns % 2 == 0;
-        console.log(lineaPar);
-        if(columns % 2 != 0);
-        console.log(lineaImpar);
-      }
-
-
-let resultado = "";
-let lineaPar = "# # # # \n";
-let lineaImpar = " # # # #\n";
-
-for (tamaño=1; tamaño % 2 == 0; tamaño++){ 
-    document.write("# # # # \n") 
-    for (tamaño=1; tamaño % 2 != 0; tamaño++) { 
-       document.write(" # # # #\n")
-    } 
-}
-
-let filas = 1;
-let lineaPar = "# # # # ";
-let lineaImpar = " # # # #";
-resultado = "";
-resultado2 = "";
-
-for (let filas = 1; filas <= 8; filas++) {
-
-    if(filas % 2 === 0){
-        resultado = "#-#-#-#-\n" + "";
-    }
-    else if(filas % 2 != 0){
-        resultado2 = "-#-#-#-#\n" + "";
-    }
-}
-console.log(resultado + resultado2)
-
-
-let filas = 1;
-let lineaPar = "# # # # ";
-let lineaImpar = " # # # #";
-let tamaño = Number(prompt("Escoge el tamaño de tu tablero"));
-let resultado;
-
-
-for (let filas = 1; filas <= tamaño; filas++) {
-
-    if(filas % 2 === 0){
-        resultado = "# # # # " + "<br>" + "";
-    }
-    else if(filas % 2 != 0){
-        resultado = "-# # # #" + "<br>" + "";
-    }
-}
-console.log(resultado);
-*/
 let resultado = "";
 let tamano = 8;
 
