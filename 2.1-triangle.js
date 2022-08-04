@@ -14,8 +14,8 @@ It may be useful to know that you can find the length of a string by writing .le
 let abc = "abc";
 console.log(abc.length);
 // → 3
-
 */
+
 
 ////// My Solution //////
 for (let n = "#"; n <= "#######"; n = n + "#"){
@@ -25,6 +25,7 @@ for (let n = "#"; n <= "#######"; n = n + "#"){
 //// Book Solution ///////
 for (let line = "#"; line.length < 8; line += "#")
   console.log(line);
+
 
 /* Español
 ////// Ciclo de un triángulo //////
