@@ -1,8 +1,16 @@
-/*Haz iterable la clase Conjunto del ejercicio anterior. Puedes remitirte a la sección acerca de la interfaz del iterador anteriormente en el capítulo si ya no recuerdas muy bien la forma exacta de la interfaz. Si usaste un array para representar a los miembros del conjunto, no solo retornes el iterador creado llamando al método Symbol.iterator en el array. Eso funcionaría, pero frustra el propósito de este ejercicio. Está bien si tu iterador se comporta de manera extraña cuando el conjunto es modificado durante la iteración.*/
+/* English
+////// Iterable groups //////
+Make the Group class from the previous exercise iterable. Refer to the section about the iterator
+interface earlier in the chapter if you aren’t clear on the exact form of the interface anymore.
 
-/*//////HINT/////
-Probablemente valga la pena definir una nueva clase IteradorConjunto. Las instancias de Iterador deberian tener una propiedad que rastree la posición actual en el conjunto. Cada vez que se invoque a next, este comprueba si está hecho, y si no, se mueve más allá del valor actual y lo retorna. La clase Group recibe un método llamado por Symbol.iterator que, cuando se llama, retorna una nueva instancia de la clase de iterador para ese grupo. */
+If you used an array to represent the group’s members, don’t just return the iterator created
+by calling the Symbol.iterator method on the array. That would work, but it defeats the purpose of this exercise.
 
+It is okay if your iterator behaves strangely when the group is modified during iteration.
+*/
+
+
+////// My solution - Mi solución //////
 class Group {
   constructor() {
     this.conjunto = [];
@@ -66,43 +74,7 @@ for (let x of Group.from(["a", "b", "c"])) {
   // → c
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*////Book's Solution/////
+////// Book solution - Solución del libro //////
 class Group {
   constructor() {
     this.members = [];
@@ -159,4 +131,14 @@ for (let value of Group.from(["a", "b", "c"])) {
 // → a
 // → b
 // → c
+
+/* Español
+////// Conjuntos Iterables //////
+Haz iterable la clase Conjunto del ejercicio anterior. Puedes remitirte a la sección acerca de la interfaz
+del iterador anteriormente en el capítulo si ya no recuerdas muy bien la forma exacta de la interfaz.
+
+Si usaste un array para representar a los miembros del conjunto, no solo retornes el iterador creado llamando
+al método Symbol.iterator en el array. Eso funcionaría, pero frustra el propósito de este ejercicio.
+
+Está bien si tu iterador se comporta de manera extraña cuando el conjunto es modificado durante la iteración.
 */
