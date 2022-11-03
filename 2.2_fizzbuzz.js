@@ -15,7 +15,7 @@ your labor market value just went up.)
 */
 
 
-////// My Solution //////
+////// My Solution - Mi solución //////
 let numero = 1;
 
 for (let numero = 1; numero <= 100; numero++) {
@@ -34,7 +34,7 @@ for (let numero = 1; numero <= 100; numero++) {
 }
 
 
-////// Book Solution //////
+////// Book Solution - Solución del libro //////
 for (let n = 1; n <= 100; n++) {
   let output = "";
   if (n % 3 == 0) output += "Fizz";
