@@ -16,30 +16,30 @@ your labor market value just went up.)
 
 
 ////// My Solution - Mi solución //////
-let numero = 1;
+let n = 1;
 
-for (let numero = 1; numero <= 100; numero++) {
+for (let n = 1; n <= 100; n++) {
     // Check that the two conditions are met, in this case that it is divisible by 3 and 5
     // Chequea que se cumplan las dos condiciones, en este caso que sea divisible entre 3 y 5
-    if(numero % 3 == 0 && numero % 5 == 0){
+    if(n % 3 == 0 && n % 5 == 0){
         console.log("FizzBuzz");
     }
     
     // Check that it is divisible by 3
     // Chequea que sea divisible entre 3
-     else if(numero % 3 == 0){
+     else if(n % 3 == 0){
         console.log("Fizz");
     }
     
     // Check that it is divisible by 5
     // Chequea que sea divisible entre 5
-    else if (numero % 5 == 0){
+    else if (n % 5 == 0){
         console.log("Buzz");
     }
     // If none of the conditions is met, write the corresponding number
     // Si no se cumple ninguna de las condiciones escribe el número correspondiente
     else {
-        console.log(numero)
+        console.log(n)
     } 
 }
 
