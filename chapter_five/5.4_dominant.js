@@ -1,10 +1,14 @@
-/*//////Dirección de Escritura Dominante/////
-Escriba una función que calcule la dirección de escritura dominante en un string de texto. Recuerde que cada objeto de codigo tiene una propiedad direction que puede ser "ltr" (de izquierda a derecha), "rtl" (de derecha a izquierda), o "ttb" (arriba a abajo). La dirección dominante es la dirección de la mayoría de los caracteres que tienen un código asociado a ellos. Las funciones codigoCaracter y contarPor definidas anteriormente en el capítulo probablemente seran útiles aquí.
+/* English
+////// Dominant writing direction //////
+Write a function that computes the dominant writing direction in a string of text. Remember that each
+script object has a direction property that can be "ltr" (left to right), "rtl" (right to left), or "ttb" (top to bottom).
 
-////TIP /////
-Tu solución puede parecerse mucho a la primera mitad del ejemplo codigosTexto. De nuevo debes contar los caracteres por el criterio basado en codigoCaracter, y luego filtrar hacia afuera la parte del resultado que se refiere a caracteres sin interés (que no tengan codigos). Encontrar la dirección con la mayor cantidad de caracteres se puede hacer con reduce. Si no está claro cómo, refiérate al ejemplo anterior en el capítulo, donde se usa reduce para encontrar el código con la mayoría de los caracteres. */
+The dominant direction is the direction of a majority of the characters that have a script associated with them.
+The characterScript and countBy functions defined earlier in the chapter are probably useful here.
+*/
 
-//------
+////// My solution - Mi solución //////
+
 
 function codigoCaracter(codigo_caracter) {
   for (let codigo of SCRIPTS) {
@@ -144,8 +148,6 @@ CODIGOCARACTER
       }
       console.log(direccionDominante("eHlلlخo!"));
 
-
-
       function codigosTexto(texto) {
         let codigos = countBy(texto, caracter => {
         let codigo = characterScript(caracter.codePointAt(0));
@@ -163,7 +165,7 @@ CODIGOCARACTER
     console.log(codigosTexto('لeHlلlخoلللللللللل'));
 
     
-//// Mi solucion ////
+// final
 
     function direccionDominante(texto) {
       let codigos = countBy(texto, caracter => {
@@ -182,17 +184,7 @@ console.log(direccionDominante("Hello!"));
 console.log(direccionDominante("Hey, مساء الخير"));
 
 
-
-
-
-
-
-
-
-
-
-
-/* Solución del libro
+////// Book solution - Solución del libro //////
 function dominantDirection(text) {
   let counted = countBy(text, char => {
     let script = characterScript(char.codePointAt(0));
@@ -209,4 +201,13 @@ console.log(dominantDirection("Hello!"));
 console.log(dominantDirection("Hey, مساء الخير"));
 // → rtl
 
+/* Español
+////// Dirección de Escritura Dominante //////
+Escriba una función que calcule la dirección de escritura dominante en un string de texto.
+Recuerde que cada objeto de codigo tiene una propiedad direction que puede ser "ltr"
+(de izquierda a derecha), "rtl" (de derecha a izquierda), o "ttb" (arriba a abajo).
+
+La dirección dominante es la dirección de la mayoría de los caracteres que tienen un código asociado a ellos.
+Las funciones codigoCaracter y contarPor definidas anteriormente en el capítulo probablemente seran útiles aquí.
 */
+
