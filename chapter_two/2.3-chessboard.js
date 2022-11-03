@@ -21,27 +21,27 @@ change the program so that it works for any size, outputting a grid of the given
 */
 
 
-////// My Solution //////
-let resultado = "";
-let tamano = 8;
+////// My Solution - Mi solución //////
+let result = "";
+let size = 8;
 
-for (let i = 1; i <= tamano; i++) {
-  for (let index = 0; index < tamano; index++) {
-    if(resultado.length % (tamano + 1) == 0){
-        resultado = resultado + "\n";
+for (let i = 1; i <= size; i++) {
+  for (let index = 0; index < size; index++) {
+    if(result.length % (size + 1) == 0){
+        result = result + "\n";
     }
-    else if (resultado.length % 2 == 0) {
-      resultado = resultado + "#";
+    else if (result.length % 2 == 0) {
+      result = result + "#";
     }
-    else if (resultado.length % 2 != 0) {
-      resultado = resultado + " ";
+    else if (result.length % 2 != 0) {
+      result = result + " ";
     }
   }
 }
-console.log(resultado);
+console.log(result);
 
 
-////// Book solution //////
+////// Book solution - Solución del libro //////
 let size = 8;
 let board = "";
 
@@ -67,13 +67,13 @@ cuadrícula hay un espacio o un carácter "#". Los caracteres deberían de forma
 
 Pasar este string a console.log debería mostrar algo como esto:
 
-# # # #
-# # # #
-# # # #
-# # # #
-# # # #
-# # # #
-# # # #
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+ # # # #
 # # # #
 
 Cuando tengas un programa que genere este patrón, define una vinculación tamaño = 8 y
