@@ -10,19 +10,18 @@ Write a loop that makes seven calls to console.log to output the following trian
 #######
 
 It may be useful to know that you can find the length of a string by writing .length after it.
-
 let abc = "abc";
 console.log(abc.length);
 // → 3
 */
 
 
-////// My Solution //////
+////// My solution - Mi solución //////
 for (let n = "#"; n <= "#######"; n = n + "#"){
     console.log(n)
 }
 
-//// Book Solution ///////
+////// Book's solution - Solución del libro //////
 for (let line = "#"; line.length < 8; line += "#")
   console.log(line);
 
