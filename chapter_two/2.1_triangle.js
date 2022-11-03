@@ -20,7 +20,7 @@ for (let n = "#"; n <= "#######"; n = n + "#"){
     console.log(n)
 }
 
-////// Book's solution - Solución del libro //////
+////// Book solution - Solución del libro //////
 for (let line = "#"; line.length < 8; line += "#")
   console.log(line);
 
